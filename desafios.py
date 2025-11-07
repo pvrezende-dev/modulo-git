@@ -46,7 +46,9 @@ def verificar_tag_valida(tag):
     Verifica se uma tag está no formato 'vX.Y' (ex: v1.0, v2.1).
     Retorna True se o formato for válido, caso contrário False.
     """
-    pass
+    # Verifica o formato 'v<digito>.<digito>'
+    padrao = r'^v\d+\.\d+$'
+    return bool(re.match(padrao, tag))
 
 
 def gerar_relatorio_final(funcoes_concluidas):
