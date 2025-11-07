@@ -55,10 +55,8 @@ def gerar_relatorio_final(funcoes_concluidas):
     """
     Recebe uma lista com os nomes das funções implementadas
     e retorna uma mensagem final do desafio.
-
-    Exemplo:
-    gerar_relatorio_final(["mostrar_mensagem_inicial", "listar_comandos_git_basicos"])
-    ->
-    "Desafio concluído! 2 funções implementadas com sucesso."
+    ...
     """
-    pass
+    # Solução para a Tarefa #5
+    num_funcoes = len(funcoes_concluidas)
+    return f"Desafio concluído! {num_funcoes} funções implementadas com sucesso."
